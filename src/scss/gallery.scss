@@ -80,9 +80,11 @@
     img{
         width: 100%;
         align-self: stretch;
+        max-width: 100%;
         @media (max-width: em(830)){
               width: 427px;
               height: 100%;
+              max-width: none;
         }
 
     }
@@ -94,9 +96,11 @@
     img{
        width: 100%;
         align-self: stretch;
+        max-width: 100%;
         @media (max-width: em(830)){
             width: 427px;
             height: 100%;
+            max-width: none;
       }
     }
   }
@@ -107,24 +111,28 @@
     img{
         align-self: stretch;
         width: 100%;
+        max-width: 100%;
         @media (max-width: em(830)){
             width: 317px;
            height: 100%;
+           max-width: none;
       }
     }
   }
   
   .gallery__image_4 {
     display: flex;
-    background-color: #7A956B;
+   
      position: relative;
  
     img{
         align-self: stretch;
         width: 100%;
+        max-width: 100%;
         @media (max-width: em(830)){
             width: 537px;
             height: 100%;
+            max-width: none;
       }
     }
     grid-area: image4;
@@ -137,9 +145,11 @@
     img{
         align-self: stretch;
         width: 100%;
+        max-width: 100%;
         @media (max-width: em(830)){
             width: 203px;
             height: 100%;
+            max-width: none;
       }
     }
   }
@@ -160,9 +170,11 @@
     
     img{
         width: 100%;
+        max-width: 100%;
         @media (max-width: em(830)){
             width: 316px;
             height: 100%;
+            max-width: none;
       }
     }
   }
@@ -184,7 +196,7 @@
         right: -23px;
         top: 3px;
         position: absolute;
-        background: url('img/gallery/arrow.svg') 0 0 no-repeat;
+        background: url('../img/gallery/arrow.svg') 0 0 no-repeat;
     }
     @media (any-hover: hover){
         &:hover{

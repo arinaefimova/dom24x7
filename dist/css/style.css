@@ -1062,6 +1062,7 @@ body::after {
   -ms-flex-item-align: stretch;
       -ms-grid-row-align: stretch;
       align-self: stretch;
+  max-width: 100%;
 }
 
 .gallery__image_2 {
@@ -1079,6 +1080,7 @@ body::after {
   -ms-flex-item-align: stretch;
       -ms-grid-row-align: stretch;
       align-self: stretch;
+  max-width: 100%;
 }
 
 .gallery__image_3 {
@@ -1096,6 +1098,7 @@ body::after {
       -ms-grid-row-align: stretch;
       align-self: stretch;
   width: 100%;
+  max-width: 100%;
 }
 
 .gallery__image_4 {
@@ -1105,7 +1108,6 @@ body::after {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  background-color: #7A956B;
   position: relative;
   grid-area: image4;
 }
@@ -1115,6 +1117,7 @@ body::after {
       -ms-grid-row-align: stretch;
       align-self: stretch;
   width: 100%;
+  max-width: 100%;
 }
 
 .gallery__image_5 {
@@ -1131,6 +1134,7 @@ body::after {
       -ms-grid-row-align: stretch;
       align-self: stretch;
   width: 100%;
+  max-width: 100%;
 }
 
 .gallery__image_6 {
@@ -1154,6 +1158,7 @@ body::after {
 
 .gallery__image_6 img {
   width: 100%;
+  max-width: 100%;
 }
 
 .gallery__text {
@@ -1178,7 +1183,7 @@ body::after {
   right: -23px;
   top: 3px;
   position: absolute;
-  background: url("img/gallery/arrow.svg") 0 0 no-repeat;
+  background: url("../img/gallery/arrow.svg") 0 0 no-repeat;
 }
 
 .swiper-scrollbar {
@@ -2351,31 +2356,37 @@ button.swiper-pagination-bullet {
   .gallery__image_1 img {
     width: 427px;
     height: 100%;
+    max-width: none;
   }
 
   .gallery__image_2 img {
     width: 427px;
     height: 100%;
+    max-width: none;
   }
 
   .gallery__image_3 img {
     width: 317px;
     height: 100%;
+    max-width: none;
   }
 
   .gallery__image_4 img {
     width: 537px;
     height: 100%;
+    max-width: none;
   }
 
   .gallery__image_5 img {
     width: 203px;
     height: 100%;
+    max-width: none;
   }
 
   .gallery__image_6 img {
     width: 316px;
     height: 100%;
+    max-width: none;
   }
 }
 
