@@ -833,6 +833,7 @@ body::after {
 
 .menu__item {
   padding: 8px 16px;
+  cursor: pointer;
 }
 
 .menu__item.active {
