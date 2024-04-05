@@ -1030,7 +1030,6 @@ body::after {
 
 .gallery__image {
   position: relative;
-  display: block;
 }
 
 .gallery__image::before {
