@@ -1,0 +1,216 @@
+.header {
+   background:#D9D9D9 url('@img/main.png') center bottom no-repeat;
+   min-height: 810px;
+   position: relative;
+   @media (max-width: em(375)){
+      min-height: 588px;
+   }
+   &::before{
+    content:'';
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    overflow: hidden;
+    right: 0;
+    min-height: 810px;
+    z-index: 1;
+    width: 100%;
+    height: 100%;
+    background-color:rgba(0, 0, 0, 0.4);
+    @media (max-width: em(375)){
+        min-height: 588px;
+     }
+}
+   background-size: cover;
+   
+
+   
+
+    &__tippy {
+        // position: absolute;
+        align-self: flex-end;
+        position: relative;
+        flex: 1 1 auto;
+        top: 0;
+        right: 46px;
+        top: 32px;
+        z-index: 2;
+        @media (max-width:$mobile){
+             top: 39px;
+             right: 32px; 
+        }
+        @media (max-width: em(500)){
+              right: 6px;
+        }
+    }
+    &__box{
+      
+       display: flex;
+       height: 100%;
+       min-height: 810px;
+       flex-direction: column;
+       @media (max-width: em(375)){
+          min-height: 558px;
+       }
+    }
+
+
+    &__content {
+        // position: absolute;
+        bottom: 0;
+        z-index: 2;
+        color: rgb(255, 255, 255);
+        left: 0;
+        padding:0 64px 64px 15px;
+        @media (max-width:$mobile){
+            padding:0 40px 64px 15px;
+        }
+        @media (max-width: em(500)){
+            padding:0 40px 32px 15px;
+        }
+    }
+
+    &__title {
+        font-size: 88px;
+        font-weight: 600;
+        line-height: 96px;
+        -webkit-text-stroke: 1px #000; 
+        text-stroke: 1px #000;
+        margin-bottom: 8px;
+        @media (max-width: em(1024)){
+            -webkit-text-stroke: 0; 
+            text-stroke: 0;
+        }
+        @media (max-width: em(720)){
+              font-size: 68px;
+              line-height: 73px;
+        }
+        @media (max-width: em(570)){
+              font-size: 60px;
+              line-height: 67px;
+        }
+        @media (max-width: em(500)){
+              font-size: 40px;
+              line-height: 48px;
+        }
+        @media (max-width: em(365)){
+              font-size: 32px;
+              line-height: 40px;
+        }
+    }
+
+    &__text {
+       
+        font-size: 24px;
+        font-weight: 300;
+        line-height: 32px;
+        @media (max-width: em(700)){
+              font-size: 20px;
+        }
+        @media (max-width: em(570)){
+              font-size: 18px;
+        }
+        @media (max-width: em(500)){
+              font-size: 16px;
+        }
+        
+    }
+}
+
+
+.tippy-header {
+
+    &__icon {
+        position: relative;
+        z-index: 3;
+        width: 36px;
+        height: 36px;
+        border-radius: 50%;
+        background-color: #fff;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    &__info {
+       
+        position: absolute;
+        top: 14px;
+        z-index: 2;
+        color: #fff;
+        right: 27px;
+        gap: 24px 0;
+        padding: 24px  127px 24px  35px ;
+        display: flex;
+        flex-direction: column;
+        border-radius: 16px 0px 16px 16px;
+        backdrop-filter: blur(32px);
+        background: rgba(255, 255, 255, 0.28);
+        @media (max-width:$mobile){
+             right: 23px;
+        }
+        @media (max-width: em(500)){
+              padding: 24px 35px;
+        }
+        @media (max-width: em(330)){
+              right: 17px;
+        }
+    }
+
+    &__item {
+        position: relative;
+        padding-left: 26px;
+        &::before{
+            content:'';         
+            background: url('img/icons/phone.svg') 0 0 no-repeat;
+            width: 16px;
+            height: 16px;
+            position: absolute;
+            top: 4px;
+            left: 0;
+        }
+
+    }
+
+    &__link {
+        font-weight: 600;
+        display: inline-block;
+        margin-bottom: 5px;
+
+    }
+
+    &__text {
+        font-weight: 300;
+        white-space: nowrap;
+    }
+}
+
+//========================================================================================================================================================
+.menu {
+
+    &__list {
+        border-radius: 16px;
+        display: inline-flex;
+        align-items: center;
+        justify-content: flex-start;
+        background: #E8E8E8;
+        padding: 5px 5px;
+        gap: 0 2px;
+    }
+
+    &__item {
+        padding: 8px 16px;
+        &.active{
+            border-radius: 12px;
+            box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.08);
+            background: rgb(255, 255, 255);
+        }
+    }
+
+    &__link {
+        font-weight: 600;
+        line-height: 20px;
+        
+    }
+}

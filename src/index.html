@@ -1,0 +1,398 @@
+<!DOCTYPE html>
+<html lang="en">
+@@include('html/_head.htm',{
+"title":"HomePage"
+})
+
+<body>
+    <div class="wrapper">
+        @@include('html/_header.htm',{})
+        <main class="page">
+
+
+
+
+            <section class="page__news">
+                <div class="page__container">
+                    <div class="page__menu menu">
+                        <nav data-tabs class="menu__body tabs">
+                            <ul data-tabs-titles class="menu__list tabs__navigation">
+
+                                <li id="n1" class="menu__item  tabs__title tab-active">
+                                    Новости
+
+                                </li>
+                                <li id="n2" class="menu__item tabs__title ">
+                                    Документы
+
+                                </li>
+                                <li id="n3" class="menu__item tabs__title ">Отчеты
+                                </li>
+                                <li id="n4" class="menu__item tabs__title ">Фотогалерея</li>
+                                <li id="n5" class="menu__item tabs__title ">Контакты
+                                </li>
+                            </ul>
+                            <div data-tabs-body class="tabs__content">
+                                <div data-numb="n1" class="tabs__body ">
+                                    <div class="tabs__inner inner-tabs">
+                                        <article class="inner-tabs__column">
+                                            <div class="inner-tabs__content">
+                                                <h3 class="inner-tabs__title"><a href=""
+                                                        class="inner-tabs__title-link">Квартира под защитой</a></h3>
+                                                <p class="inner-tabs__text">Со страховым полисом вы защищены от рисков
+                                                    потерять свою квартиру и все, что находится в ней.</p>
+                                            </div>
+                                            <time class="inner-tabs__date">16 ноября 2022 г.</time>
+                                        </article>
+                                        <article class="inner-tabs__column">
+                                            <div class="inner-tabs__content">
+                                                <h3 class="inner-tabs__title"><a href=""
+                                                        class="inner-tabs__title-link">Жители сами выберут, какой фильм
+                                                        посмотреть у себя во дворе</a></h3>
+                                                <p class="inner-tabs__text">Сразу в 11 жилых комплексах начался сезон
+                                                    кинопоказов на открытом воздухе.</p>
+                                            </div>
+                                            <time class="inner-tabs__date">25 августа 2022 г.</time>
+                                        </article>
+                                        <article class="inner-tabs__column">
+                                            <div class="inner-tabs__content">
+                                                <h3 class="inner-tabs__title"><a href="#"
+                                                        class="inner-tabs__title-link">С новым сервисом консьерж станет
+                                                        вашим личным помощником</a></h3>
+                                                <p class="inner-tabs__text">Нам важно делать комфортной не только вашу
+                                                    жизнь, но и ваших питомцев.</p>
+                                            </div>
+                                            <time class="inner-tabs__date">15 июня 2021 г.</time>
+                                        </article>
+                                        <article class="inner-tabs__column">
+                                            <div class="inner-tabs__content">
+                                                <h3 class="inner-tabs__title"><a href=""
+                                                        class="inner-tabs__title-link">Хорошие новости для тех, кто
+                                                        любит весело проводить время</a></h3>
+                                                <p class="inner-tabs__text">Представляем новую услугу – подписку на
+                                                    электросамокаты, велосипеды, домашние тренажеры и игровые приставки
+                                                    Х-box.</p>
+                                            </div>
+                                            <time class="inner-tabs__date">14 августа 2022 г.</time>
+                                        </article>
+                                        <article class="inner-tabs__column">
+                                            <div class="inner-tabs__content">
+                                                <h3 class="inner-tabs__title"><a href=""
+                                                        class="inner-tabs__title-link">Помогаем заботиться о ваших
+                                                        питомцах</a></h3>
+                                                <p class="inner-tabs__text">Нам важно делать комфортной не только вашу
+                                                    жизнь, но и ваших питомцев.</p>
+                                            </div>
+                                            <time class="inner-tabs__date">14 мая 2021 г.</time>
+                                        </article>
+                                        <article class="inner-tabs__column inner-tabs__column_link">
+                                            <div class="inner-tabs__content">
+                                                <h3 class="inner-tabs__title inner-tabs__title_big"><a href=""
+                                                        class="inner-tabs__title-link">Все новости</a></h3>
+                                                <p class="inner-tabs__text inner-tabs__text_big">от управляющей компании
+                                                    и жителей</p>
+                                            </div>
+                                            <a href="#" class="inner-tabs__transition"><img
+                                                    src="img/icons/arrorw-to.svg" alt="arrow"></a>
+                                        </article>
+
+                                    </div>
+                                </div>
+                                <div data-numb="n2" class="tabs__body">
+                                    <div class="tabs__documents info-block">
+                                        <div class="info-block__slider swiper documents">
+                                            <div class="info-block__wrapper swiper-wrapper">
+                                                <div class="info-block__slide swiper-slide">
+                                                    <time class="swiper-slide__date">15 декабря 2022</time>
+                                                    <h4 class="swiper-slide__title">Тарифы ЖКХ с 01.12 2022 г.</h4>
+                                                    <a href="#" class="swiper-slide__image">
+                                                        <div class="swiper-slide__image-wrap">
+
+                                                            <img src="@img/documents/01.jpg" alt="документ">
+                                                        </div>
+                                                    </a>
+
+
+                                                </div>
+                                                <div class="info-block__slide swiper-slide">
+                                                    <time class="swiper-slide__date">10 января 2022</time>
+                                                    <h4 class="swiper-slide__title">Протокол Общего собрания 17 декабря
+                                                        2021 г.</h4>
+
+                                                    <a href="#" class="swiper-slide__image">
+                                                        <div class="swiper-slide__image-wrap">
+
+                                                            <img src="@img/documents/02.jpg" alt="документ">
+
+                                                        </div>
+                                                    </a>
+
+
+                                                </div>
+                                                <div class="info-block__slide swiper-slide">
+                                                    <time class="swiper-slide__date">6 декабря 2021</time>
+                                                    <h4 class="swiper-slide__title">Размер платы за ТО в Мытищинском
+                                                        районе</h4>
+                                                    <a href="#" class="swiper-slide__image">
+                                                        <div class="swiper-slide__image-wrap">
+
+                                                            <img src="@img/documents/03.jpg" alt="документ">
+                                                        </div>
+                                                    </a>
+
+
+                                                </div>
+                                                <div class="info-block__slide swiper-slide">
+                                                    <time class="swiper-slide__date">15 декабря 2022</time>
+                                                    <h4 class="swiper-slide__title">Тарифы ЖКХ с 01.12 2022 г.</h4>
+                                                    <a href="#" class="swiper-slide__image">
+                                                        <div class="swiper-slide__image-wrap">
+
+                                                            <img src="@img/documents/01.jpg" alt="документ">
+                                                        </div>
+                                                    </a>
+
+
+                                                </div>
+                                                <div class="info-block__slide swiper-slide">
+                                                    <time class="swiper-slide__date">10 января 2022</time>
+                                                    <h4 class="swiper-slide__title">Протокол Общего собрания 17 декабря
+                                                        2021 г.</h4>
+                                                    <a href="#" class="swiper-slide__image">
+                                                        <div class="swiper-slide__image-wrap">
+
+                                                            <img src="@img/documents/02.jpg" alt="документ">
+                                                        </div>
+                                                    </a>
+
+
+                                                </div>
+                                                <div class="info-block__slide swiper-slide">
+                                                    <time class="swiper-slide__date">6 декабря 2021</time>
+                                                    <h4 class="swiper-slide__title">Размер платы за ТО в Мытищинском
+                                                        районе</h4>
+                                                    <a href="#" class="swiper-slide__image">
+                                                        <div class="swiper-slide__image-wrap">
+
+                                                            <img src="@img/documents/03.jpg" alt="документ">
+                                                        </div>
+                                                    </a>
+
+
+                                                </div>
+                                            </div>
+
+                                            <!-- <div class="swiper-pagination"></div> -->
+                                            <div class="swiper-scrollbar swiper-scrollbar-doc"></div>
+                                            <a href="#" class="scrollbar__link">Смотреть все документы</a>
+
+
+                                        </div>
+                                        <div class="swiper-navigation">
+
+                                            <button id="swiperNext" class="swiper-btn"><img
+                                                    src="img/documents/arrow.svg" alt="arrow"></button>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div data-numb="n3" class="tabs__body">
+                                    <div class="tabs__reports info-block">
+                                  
+                                          <div class="info-block__slider swiper reports">
+                                            <div class="info-block__wrapper swiper-wrapper">
+                                                <div class="info-block__slide swiper-slide">
+                                                    <time class="swiper-slide__date">01 июля 2023</time>
+                                                    <h4 class="swiper-slide__title">Тарифы ЖКХ с 01.12 2022 г.</h4>
+                                                    <a href="#" class="swiper-slide__image">
+                                                        <div class="swiper-slide__image-wrap">
+
+                                                            <img src="@img/reviews/01.jpg" alt="документ">
+                                                        </div>
+                                                    </a>
+
+
+                                                </div>
+                                                <div class="info-block__slide swiper-slide">
+                                                    <time class="swiper-slide__date">01 июня 2023</time>
+                                                    <h4 class="swiper-slide__title">Отчет правления за май 2023 г.</h4>
+
+                                                    <a href="#" class="swiper-slide__image">
+                                                        <div class="swiper-slide__image-wrap">
+
+                                                            <img src="@img/reviews/02.jpg" alt="документ">
+                                                           
+                                                        </div>
+                                                    </a>
+
+
+                                                </div>
+                                                <div class="info-block__slide swiper-slide">
+                                                    <time class="swiper-slide__date">01 мая 2023</time>
+                                                    <h4 class="swiper-slide__title">Отчет правления за апрель 2023 г. </h4>
+                                                    <a href="#" class="swiper-slide__image">
+                                                        <div class="swiper-slide__image-wrap">
+
+                                                            <img src="@img/reviews/03.jpg" alt="документ">
+                                                        </div>
+                                                    </a>
+
+
+                                                </div>
+                                                <div class="info-block__slide swiper-slide">
+                                                    <time class="swiper-slide__date">15 декабря 2022</time>
+                                                    <h4 class="swiper-slide__title">Тарифы ЖКХ с 01.12 2022 г.</h4>
+                                                    <a href="#" class="swiper-slide__image">
+                                                        <div class="swiper-slide__image-wrap">
+
+                                                            <img src="@img/documents/01.jpg" alt="документ">
+                                                        </div>
+                                                    </a>
+
+
+                                                </div>
+                                                <div class="info-block__slide swiper-slide">
+                                                    <time class="swiper-slide__date">10 января 2022</time>
+                                                    <h4 class="swiper-slide__title">Протокол Общего собрания 17 декабря
+                                                        2021 г.</h4>
+                                                    <a href="#" class="swiper-slide__image">
+                                                        <div class="swiper-slide__image-wrap">
+
+                                                            <img src="@img/documents/02.jpg" alt="документ">
+                                                        </div>
+                                                    </a>
+
+
+                                                </div>
+                                                <div class="info-block__slide swiper-slide">
+                                                    <time class="swiper-slide__date">6 декабря 2021</time>
+                                                    <h4 class="swiper-slide__title">Размер платы за ТО в Мытищинском
+                                                        районе</h4>
+                                                    <a href="#" class="swiper-slide__image">
+                                                        <div class="swiper-slide__image-wrap">
+
+                                                            <img src="@img/documents/03.jpg" alt="документ">
+                                                        </div>
+                                                    </a>
+
+
+                                                </div>
+                                            </div>
+                                            
+                                            
+                                            <div class="swiper-scrollbar swiper-scrollbar-rep"></div>
+                                            <a href="#" class="scrollbar__link">Смотреть все документы</a>
+
+
+                                        </div>
+                                        <div class="swiper-navigation">
+
+                                            <button id="swiperNext2" class="swiper-btn"><img
+                                                    src="img/documents/arrow.svg" alt="arrow"></button>
+                                        </div>
+                                    </div> 
+                                </div>
+                                <div data-numb="n4" class="tabs__body">
+                                    <div class="gallery">
+                                        <a href="#" class="gallery__image gallery__image_1">
+                                            <img src="@img/gallery/01.png" alt="img1">
+                                        </a>
+                                        <a href="#" class="gallery__image gallery__image_2">
+                                            <img src="@img/gallery/02.png" alt="img2">
+                                        </a>
+                                        <a href="#" class="gallery__image gallery__image_3">
+                                            <img src="@img/gallery/03.png" alt="img3">
+                                        </a>
+                                        <a href="#" class="gallery__image gallery__image_4">
+                                            <img src="@img/gallery/04.png" alt="img4">
+                                        </a>
+                                        <a href="#" class="gallery__image gallery__image_5">
+                                            <img src="@img/gallery/05.png" alt="img5">
+                                        </a>
+                                        <a href="#" class="gallery__image gallery__image_6">
+                                            <img src="@img/gallery/06.png" alt="img6">
+                                            <p class="gallery__text">
+                                                Смотреть все
+                                            </p>
+                                        </a>
+                                    </div>
+                                </div>
+                                <div data-numb="n5" class="tabs__body ">
+                                    <div class="contacts">
+                                        <div class="contacts__info info-contacts">
+                                            <div class="info-contacts__item">
+                                                <div class="info-contacts__icon"><img src="img/contacts/call.svg"
+                                                        alt="call"></div>
+                                                <div class="info-contacts__text">Телефон</div>
+                                                <a href="88001112233" class="info-contacts__link">8 (800) 111-22-33</a>
+                                            </div>
+                                            <div class="info-contacts__item">
+                                                <div class="info-contacts__icon"><img src="img/contacts/location.svg"
+                                                        alt="location"></div>
+                                                <div class="info-contacts__text">Адрес клиентского сервиса</div>
+                                                <a href="#" class="info-contacts__link">г. Тверь, пр-к Калинина,
+                                                    д. 17, этаж 3, каб. 103</a>
+                                            </div>
+                                            <div class="info-contacts__item">
+                                                <div class="info-contacts__icon"><img src="img/contacts/mail.svg"
+                                                        alt="mail"></div>
+                                                <div class="info-contacts__text">Электронная почта</div>
+                                                <a href="info@company.ru"
+                                                    class="info-contacts__link">info@company.ru</a>
+                                            </div>
+
+                                        </div>
+                                        <div class="contacts__map">
+                                            <div id="map" class="map"></div>
+                                        </div>
+
+                                    </div>
+                                </div>
+                            </div>
+
+
+                        </nav>
+                    </div>
+                </div>
+            </section>
+            <section class="mobile-apps">
+                <div class="mobile-apps__container">
+                    <div class="mobile-apps__inner">
+
+                        <div class="mobile-apps__apps apps">
+                            <div class="apps__content">
+
+                                <h3 class="apps__title">Скачайте приложение Dom 24/7</h3>
+                                <p class="apps__text">Чтобы общаться с соседями, вовремя узнавать о новостях и сдавать
+                                    показания счётчиков
+                                </p>
+                            </div>
+                            <div class="apps__links">
+                                <a href="#" class="apps__link"><img src="@img/mobile-apps/google-play.png"
+                                        alt="Google Play"></a>
+                                <a href="#" class="apps__link"><img src="@img/mobile-apps/app-store.png"
+                                        alt="App Store"></a>
+                                <a href="#" class="apps__link"><img src="@img/mobile-apps/rustore.png"
+                                        alt="rustore"></a>
+                                <a href="#" class="apps__link"><img src="@img/mobile-apps/app-gallery.png"
+                                        alt="App Gallery"></a>
+                            </div>
+
+                        </div>
+                        <div class="mobile-apps__image">
+                            <img src="img/mobile-apps/mobile.png" alt="mobile phone">
+                        </div>
+                    </div>
+                </div>
+
+            </section>
+
+
+        </main>
+    </div>
+    @@include('html/_popup.htm',{})
+    @@include('html/_footer.htm',{})
+
+    @@include('html/_js.htm',{})
+</body>
+
+</html>

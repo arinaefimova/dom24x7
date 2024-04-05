@@ -1,0 +1,212 @@
+@use "sass:math";
+
+// Подключение миксинов ===========================================================================================================================================================================================================================================================================
+@import "base/mixins";
+
+// Подключение шрифтов ===========================================================================================================================================================================================================================================================================
+//&display=swap - добавить при подключении через плагин
+// &subset=cyrillic -exit - добавление кириллицы
+@import "fonts/fonts";
+
+//  ==============================================================================================================================================================================================================================================================================
+$fontFamily: "Mont";
+$fontSize: toRem(14); 
+
+$mainColor: rgb(44, 44, 44); 
+
+$minWidth: 320;
+$maxWidth: 1440;
+$maxWidthContainer: 1352;
+$containerPadding: 30;
+$containerWidth: $maxWidthContainer + $containerPadding;
+
+$pc: em($containerWidth); 
+$tablet: em(991.98); 
+$mobile: em(767.98); 
+$mobileSmall: em(479.98); 
+
+$responsiveType: 1;
+@import "base/null";
+
+body {
+    font-weight: 400;
+    line-height: 20px;
+	.lock & {
+		overflow: hidden;
+		touch-action: none;
+		overscroll-behavior: none;
+	}
+}
+.wrapper {
+	min-height: 100%;
+	display: flex;
+	flex-direction: column;
+	overflow: hidden;
+	@supports (overflow: clip) {
+		overflow: clip;
+	}
+		> main {
+		flex: 1 1 auto;
+	}
+
+	> * {
+		min-width: 0;
+	}
+}
+
+.tabs__navigation{
+    margin-bottom: 40px;
+    position: relative;
+    @media (max-width: em(560)){
+        width: 100vw;
+    }
+    overflow-x: scroll;
+    white-space: nowrap;
+   
+}
+.tabs__navigation::-webkit-scrollbar {
+    width: 0;
+    height: 0;
+}
+.page__news{
+  padding: 60px 0;
+background:#F5F5F5;
+}
+//========================================================================================================================================================
+.mobile-apps {
+    padding-top: 49px;
+    border-bottom: 8px solid #F5F5F5;
+    @media (max-width: em(375)){
+          padding-top: 40px;
+    }
+ 
+    &__inner{
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        gap: 0 10px;
+        @media (max-width: em(900)){
+              flex-direction: column;    
+        }
+    }
+
+    &__apps {
+        display: flex;
+        position: relative;
+        z-index: 3;
+        flex-direction: column;
+        gap: 40px 0;
+        @media (max-width: em(900)){
+              align-items: center;
+              margin-bottom: -45px;
+        }
+        @media (max-width: em(560)){
+              margin-bottom: 48px;
+        }
+    }
+
+    &__image {
+        width: 816px;
+        display: inline-block;
+        height: 380px;
+        position: relative;
+        z-index: 1;
+        overflow: hidden;
+        img{
+            height: 380px;
+            width: 816px;
+        }
+     
+    }
+}
+.apps {
+
+    &__content {
+        @media (max-width: em(900)){
+              text-align: center;
+        }
+    }
+
+    &__title {
+        font-weight: 600;
+        font-size: 28px;
+        line-height: 40px;
+        margin-bottom: 8px;
+    }
+
+    &__text {
+        font-size: 16px;
+        line-height: 24px;
+        max-width: 460px;
+        @media (max-width: em(900)){
+              max-width: 670px;
+        }
+    }
+
+    &__links {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 12px;
+        align-items: center;
+        text-align: center;
+        justify-content: center;     
+        @media (min-width:em(900)){
+            max-width: 300px;     
+        }
+    }
+}
+.swiper-navigation {
+    display: flex;
+    justify-content: space-between;
+    width: 600px;
+    margin: 0 auto;
+}
+@if ($responsiveType==1) {
+	
+	[class*="__container"] {
+		@if ($maxWidthContainer>0) {
+			max-width: toRem($containerWidth);
+			margin: 0 auto;
+		}
+		@if ($containerPadding>0) {
+			@if ($maxWidthContainer>0) {
+				padding: 0 toRem(math.div($containerPadding, 2));
+			} @else {
+				@include adaptiveValue("padding-left", math.div($containerPadding, 2), 15);
+				@include adaptiveValue("padding-right", math.div($containerPadding, 2), 15);
+			}
+		}
+	}
+} @else {
+	
+	[class*="__container"] {
+		margin: 0 auto;
+		@if ($maxWidthContainer>0) {
+			max-width: toRem($containerWidth);
+		} @else {
+			@if ($containerPadding>0) {
+				padding: 0 toRem(math.div($containerPadding, 2));
+			}
+		}
+		@media (max-width: $pc) {
+			max-width: toRem(970);
+		}
+		@media (max-width: $tablet) {
+			max-width: toRem(750);
+		}
+		@media (max-width: $mobile) {
+			max-width: none;
+			@if ($containerPadding>0 and $maxWidthContainer>0) {
+				padding: 0 toRem(math.div($containerPadding, 2));
+			}
+		}
+	}
+}
+@import "base";
+@import "common";
+@import "base/forms/checkbox";
+@import "header";
+@import "footer";
+@import "gallery";
+@import "documents";
+@import "contacts";

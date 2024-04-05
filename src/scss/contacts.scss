@@ -1,0 +1,76 @@
+.contacts {
+
+    &__info {
+        margin-bottom: 40px;
+       
+    }
+
+   
+}
+.map{
+    height: 452px;
+    @media (max-width: em(1024)){
+          height: 428px;
+    }
+    @media (max-width: em(375)){
+          height: 208px;
+    }
+    
+}
+.info-contacts {
+    display: flex;
+    gap: 0 15px;
+       
+        @media (max-width: em(730)){
+              flex-direction: column;
+              gap: 25px 0;
+        }
+
+    &__item {
+        flex: 0 1 33.333%;
+    }
+
+    &__icon {
+        margin-bottom: 10px;
+    }
+
+    &__text {
+        font-weight: 600;
+        line-height: 20px;
+        color: rgb(169, 169, 169);
+    }
+
+    &__link {
+        font-size: 16px;
+        line-height: 24px;
+        font-weight: 700;
+    }
+}
+
+.ymaps-2-1-79-controls__control{
+    background-color: #fff;
+    border-radius: 9px!important;
+    @media (max-width: em(744)){
+          display: none !important;
+    }
+}
+.ymaps-2-1-79-float-button{
+    box-shadow: none !important;
+    border-radius: 15px !important;
+}
+.ymaps-2-1-79-zoom__minus .ymaps-2-1-79-zoom__icon{
+    background: url('@img/icons/-.svg') 4px 4px  no-repeat !important;
+    width: 25px !important;
+    display: flex !important;
+    align-items: center !important;
+    justify-content:center !important;
+    height: 20px !important;
+}
+.ymaps-2-1-79-zoom__plus .ymaps-2-1-79-zoom__icon{
+    background: url('@img/icons/+.svg') 4px 4px  no-repeat !important;
+    width: 25px !important;
+    display: flex !important;
+    align-items: center !important;
+    justify-content:center !important;
+    height: 20px !important;
+}

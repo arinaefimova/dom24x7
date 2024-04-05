@@ -1,0 +1,197 @@
+.gallery {
+    position: relative;
+    display: grid;
+    grid-template-areas:
+      "image1 image1 image3 image4 image4"
+      "image2 image2 image3 image5 image6 "
+    ;
+     grid-gap: 16px; 
+    &::-webkit-scrollbar {
+        height: 4px;
+       overflow: hidden;
+        border-radius: 10px;
+        border: 1px solid rgb(218, 218, 218);
+      }
+    &::-webkit-scrollbar-track {
+        border-radius: 10px;
+        background: rgb(218, 218, 218); 
+      }
+      &::-webkit-scrollbar-thumb {
+        border-radius: 10px;
+        background: rgb(44, 44, 44);
+        border: 1px solid rgb(44, 44, 44);
+      }
+   @media (max-width: em(830)){
+        overflow-x: scroll;
+        width:  100vw;  
+        padding-right: 12px;
+        padding-bottom: 20px;
+   }
+   @media (max-width:em(375)){
+    display: flex;
+    max-height: 327px;
+    gap: 10px;
+   }
+  }
+  .tabs__body{
+    height: 100%
+  }
+  .gallery__image {
+    background-color: #7A956B;
+    position: relative;
+   border-radius: 8px;
+   &::before{
+    content:'';
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    left: 0;
+    top: 0;
+   transition: background-color 0.8s;
+    z-index: 3;
+    background-color: transparent;
+ }
+   @media (any-hover: hover){
+    &:hover{
+        cursor: url('../img/documents/cursor.png'), auto;
+        &:not(:last-child) {
+            &::before{
+                 content:'';
+                 position: absolute;
+                 width: 100%;
+                 height: 100%;
+                 left: 0;
+                 top: 0;
+                 z-index: 3;
+                 background: url('@img/documents/search.svg') center center no-repeat;
+                 background-color: rgba(0, 0, 0, 0.3);
+             }
+        }
+    }
+   }
+
+    display: block; 
+  }
+  
+  .gallery__image_1 {
+    display: flex;
+    grid-area: image1;
+    
+    img{
+        width: 100%;
+        align-self: stretch;
+        @media (max-width: em(830)){
+              width: 427px;
+              height: 100%;
+        }
+
+    }
+  }
+  
+  .gallery__image_2 {
+    grid-area: image2;
+    display: flex;
+    img{
+       width: 100%;
+        align-self: stretch;
+        @media (max-width: em(830)){
+            width: 427px;
+            height: 100%;
+      }
+    }
+  }
+  
+  .gallery__image_3 {
+    grid-area: image3;
+    display: flex;
+    img{
+        align-self: stretch;
+        width: 100%;
+        @media (max-width: em(830)){
+            width: 317px;
+           height: 100%;
+      }
+    }
+  }
+  
+  .gallery__image_4 {
+    display: flex;
+    background-color: #7A956B;
+     position: relative;
+ 
+    img{
+        align-self: stretch;
+        width: 100%;
+        @media (max-width: em(830)){
+            width: 537px;
+            height: 100%;
+      }
+    }
+    grid-area: image4;
+  }
+  
+  .gallery__image_5 {
+    display: flex;
+    grid-area: image5;
+   
+    img{
+        align-self: stretch;
+        width: 100%;
+        @media (max-width: em(830)){
+            width: 203px;
+            height: 100%;
+      }
+    }
+  }
+  
+.gallery__image_6 {
+    display: flex;
+    grid-area: image6;
+    position: relative;
+    &::before{
+        content:'';
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        background: rgba(0, 0, 0, 0.5);
+        border-radius: 8px;
+        
+    }
+    
+    img{
+        width: 100%;
+        @media (max-width: em(830)){
+            width: 316px;
+            height: 100%;
+      }
+    }
+  }
+  .gallery__text{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    display: block;
+    color: #fff;
+    height: 10px;
+    z-index: 18;
+    line-height: 20px;
+    font-weight: 600;
+    &::before{
+        content:'';
+        width: 11px;
+        height: 10px;
+        right: -23px;
+        top: 3px;
+        position: absolute;
+        background: url('img/gallery/arrow.svg') 0 0 no-repeat;
+    }
+    @media (any-hover: hover){
+        &:hover{
+            text-decoration: underline;
+        }
+    }
+
+  }
+  
+  

@@ -1,0 +1,41 @@
+<div id="popup" aria-hidden="true" class="popup">
+    <div class="popup__wrapper">
+        <div class="popup__content">
+            <button data-close type="button" class="popup__close"><img src="img/popup/close.svg" alt="закрыть"></button>
+            <div class="popup__text">
+
+                <h3 class="popup__title">Оставить заявку</h3>
+                <div class="popup__message">Наш менеджер свяжется с вами для обсуждения сотрудничества</div>
+                <form class="popup__form form-popup">
+                    <div class="form-popup__name">
+                        <button type="submit" class="form-popup__button-name"><img src="img/popup/face.svg"
+                                alt="name"></button>
+                        <input autocomplete="off" type="text" name="form[]" data-error="Ошибка"
+                            placeholder="Как вас зовут?" class="form-popup__input-name">
+                    </div>
+                    <div class="form-popup__email">
+                        <button type="submit" class="form-popup__button-email"><img src="img/popup/phone.svg"
+                                alt="phone">
+                        </button>
+                        <input autocomplete="off" type="text" name="form[]" placeholder="Номер телефона"
+                            class="form-popup__input-email">
+
+
+                    </div>
+                    <label class="checkbox" for="my-checkbox">
+                        <input type="checkbox" id="my-checkbox"><span class="checkbox__text">Согласен на обработку
+                            персональных данных</span>
+                    </label>
+                    <div class="textarea">
+                        <textarea name="textarea__inp" id="" cols="30" rows="10" class="textarea__inp"
+                            placeholder="Ваш вопрос"></textarea>
+                    </div>
+                    <button type="submit" class="popup__button">Отправить</button>
+
+                </form>
+
+
+            </div>
+        </div>
+    </div>
+</div>

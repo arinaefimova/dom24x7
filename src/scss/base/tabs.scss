@@ -1,0 +1,84 @@
+.tabs {
+	&__title {
+		&.tab-active {
+                border-radius: 12px;
+                box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.08);
+                background: rgb(255, 255, 255); 
+		}
+	}
+}
+
+
+.inner-tabs {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+    @media (max-width: em(1300)){
+        grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));   
+    }
+    @media (max-width: em(375)){
+        grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    }
+    gap: 16px;
+    &__column {
+        padding: 32px;
+        min-height: 280px;
+        display: flex;
+        flex-direction: column;
+        border-radius: 24px;
+        background-color: rgb(255, 255, 255);
+        &_link {
+            background-color: rgb(96, 157, 139);
+            color: #fff;
+            
+
+        }
+        transition: box-shadow 0.4s;
+        @media (any-hover: hover){
+            &:hover{
+                box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+            }
+        }
+        @media (max-width: em(375)){
+              min-height: 180px;
+        }
+    }
+
+    &__content {
+        flex: 1 1 auto;
+    }
+
+    &__title {
+        cursor: pointer;
+        font-size: 20px;
+        font-weight: 600;
+        line-height: 24px;
+        
+        margin-bottom: 12px;
+        &_big{
+            font-size: 28px;
+        }
+        @media (max-width: em(375)){
+              font-size: 14px;
+              margin-bottom: 8px;
+        }
+    }
+    &__text {
+        color: rgb(99, 99, 99);
+        &_big{
+            color: #fff;
+        }
+        @media (max-width: em(375)){
+              font-size: 12px;
+              line-height: 16px;
+        }
+    }
+
+    &__date {
+        margin-top: 8px;
+        color: rgb(169, 169, 169);
+        @media (max-width: em(375)){
+              font-size: 12px;
+        }
+    }
+
+}
