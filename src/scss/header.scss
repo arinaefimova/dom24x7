@@ -1,9 +1,9 @@
 .header {
    background:#D9D9D9 url('@img/main.png') center bottom no-repeat;
-   min-height: 810px;
+   height: 810px;
    position: relative;
    @media (max-width: em(375)){
-      min-height: 588px;
+      height: 588px;
    }
    &::before{
     content:'';
