@@ -139,6 +139,9 @@ body::after {
             font-weight: 600;
             line-height: 16px;
             }
+            &.error-label{
+                
+            }
        
     }
 
@@ -150,6 +153,7 @@ body::after {
         gap: 0 14px;
         padding: 16px;
         margin-bottom: 16px;
+       
     }
 
     &__input-tel {
@@ -165,6 +169,10 @@ body::after {
             line-height: 16px;
         }
     }
+}
+.error-label{
+    color: red;
+    margin-bottom: 20px;
 }
 .error {
     box-shadow: 0 0 2px 2px rgba(255, 0, 0, 0.3); /* более слабая красная тень */

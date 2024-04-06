@@ -169,7 +169,33 @@ background:#F5F5F5;
             max-width: 300px;     
             justify-content: flex-start;
         }
+        
     }
+    &__link{
+        &_google{
+
+            img{
+                max-width: 149px;
+            }
+        }
+        &_app{
+            img{
+                max-width: 139px;
+            }
+
+
+         }
+         &_ru{
+            img{
+                max-width: 127px;
+            }
+         }
+         &_gallery{
+            img{
+                max-width: 146px;
+            }
+         }
+}
 }
 .swiper-navigation {
     display: flex;

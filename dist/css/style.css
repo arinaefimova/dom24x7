@@ -245,6 +245,22 @@ body._lock::before {
           justify-content: center;
 }
 
+.apps__link_google img {
+  max-width: 149px;
+}
+
+.apps__link_app img {
+  max-width: 139px;
+}
+
+.apps__link_ru img {
+  max-width: 127px;
+}
+
+.apps__link_gallery img {
+  max-width: 146px;
+}
+
 .swiper-navigation {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -500,6 +516,11 @@ body::after {
   font-size: 12px;
   font-weight: 600;
   line-height: 16px;
+}
+
+.error-label {
+  color: red;
+  margin-bottom: 20px;
 }
 
 .error {
@@ -2724,6 +2745,7 @@ button.swiper-pagination-bullet {
     top: 26px;
     right: calc(50% - 250px);
     z-index: 20;
+    background-size: cover;
     width: 228px;
     height: 44px;
   }
