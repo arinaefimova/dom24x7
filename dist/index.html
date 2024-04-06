@@ -5,9 +5,9 @@
 	<title>HomePage</title>
 	<meta charset="UTF-8">
 	<meta name="format-detection" content="telephone=no">
-	<link rel="stylesheet" href="css/style.min.css?_v=20240405220242">
+	<link rel="stylesheet" href="css/style.min.css?_v=20240406103555">
 	<link rel="shortcut icon" href="img/icons/favicon.svg">
-	<script src="https://api-maps.yandex.ru/2.1/?apikey=30782ab6-af33-487f-aa17-1a11a0c4ac62&lang=ru_RU&_v=20240405220242" type="text/javascript"></script>
+	<script src="https://api-maps.yandex.ru/2.1/?apikey=30782ab6-af33-487f-aa17-1a11a0c4ac62&lang=ru_RU&_v=20240406103555" type="text/javascript"></script>
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 </head>
 
@@ -363,7 +363,7 @@
 											<img src="img/gallery/02.png" alt="img2">
 										</a>
 										<a href="#" class="gallery__image gallery__image_3">
-											<img src="img/gallery/03.png" alt="img3">
+										<img src="img/gallery/03.png" alt="img3">
 										</a>
 										<a href="#" class="gallery__image gallery__image_4">
 											<img src="img/gallery/04.png" alt="img4">
@@ -452,24 +452,27 @@
 
 					<h3 class="popup__title">Оставить заявку</h3>
 					<div class="popup__message">Наш менеджер свяжется с вами для обсуждения сотрудничества</div>
-					<form class="popup__form form-popup">
+					<form class="popup__form form-popup" id="add-form">
 						<div class="form-popup__name">
-							<button type="submit" class="form-popup__button-name"><img src="img/popup/face.svg" alt="name"></button>
-							<input autocomplete="off" type="text" name="form[]" data-error="Ошибка" placeholder="Как вас зовут?" class="form-popup__input-name">
+							<div class="form-popup__name-wrapper">
+
+								<button type="submit" class="form-popup__button-name"><img src="img/popup/face.svg" alt="name"></button>
+								<input data-required="true" data-max-length="21" data-min-length="2" data-letters="true" autocomplete="off" type="text" name="form[]" placeholder="Как вас зовут?" class="form-popup__input-name">
+							</div>
 						</div>
-						<div class="form-popup__email">
+						<div class="form-popup__tel">
 							<button type="submit" class="form-popup__button-email"><img src="img/popup/phone.svg" alt="phone">
 							</button>
-							<input autocomplete="off" type="text" name="form[]" placeholder="Номер телефона" class="form-popup__input-email">
+							<input data-required="true" autocomplete="off" type="tel" name="form[]" placeholder="Номер телефона" class="form-popup__input-tel">
 
 
 						</div>
 						<label class="checkbox" for="my-checkbox">
-							<input type="checkbox" id="my-checkbox"><span class="checkbox__text">Согласен на обработку
+							<input data-required="true" type="checkbox" id="my-checkbox"><span class="checkbox__text">Согласен на обработку
 								персональных данных</span>
 						</label>
 						<div class="textarea">
-							<textarea name="textarea__inp" id="" cols="30" rows="10" class="textarea__inp" placeholder="Ваш вопрос"></textarea>
+							<textarea data-required="true" name="textarea__inp" id="contact-message" cols="30" rows="10" class="textarea__inp" placeholder="Ваш вопрос"></textarea>
 						</div>
 						<button type="submit" class="popup__button">Отправить</button>
 
@@ -531,7 +534,7 @@
 	</footer>
 
 
-	<script src="js/app.min.js?_v=20240405220242"></script>
+	<script src="js/app.min.js?_v=20240406103555"></script>
 </body>
 
 </html>

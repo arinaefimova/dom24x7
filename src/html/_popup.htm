@@ -6,28 +6,32 @@
 
                 <h3 class="popup__title">Оставить заявку</h3>
                 <div class="popup__message">Наш менеджер свяжется с вами для обсуждения сотрудничества</div>
-                <form class="popup__form form-popup">
+                <form class="popup__form form-popup" id="add-form">
                     <div class="form-popup__name">
-                        <button type="submit" class="form-popup__button-name"><img src="img/popup/face.svg"
-                                alt="name"></button>
-                        <input autocomplete="off" type="text" name="form[]" data-error="Ошибка"
-                            placeholder="Как вас зовут?" class="form-popup__input-name">
+                        <div class="form-popup__name-wrapper">
+
+                            <button type="submit" class="form-popup__button-name"><img src="img/popup/face.svg"
+                                    alt="name"></button>
+                            <input data-required="true" data-max-length="21" data-min-length="2" data-letters="true" autocomplete="off"
+                                type="text" name="form[]" placeholder="Как вас зовут?" class="form-popup__input-name">
+                        </div>
                     </div>
-                    <div class="form-popup__email">
+                    <div class="form-popup__tel">
                         <button type="submit" class="form-popup__button-email"><img src="img/popup/phone.svg"
                                 alt="phone">
                         </button>
-                        <input autocomplete="off" type="text" name="form[]" placeholder="Номер телефона"
-                            class="form-popup__input-email">
+                        <input data-required="true" autocomplete="off" type="tel" name="form[]"
+                            placeholder="Номер телефона" class="form-popup__input-tel">
 
 
                     </div>
                     <label class="checkbox" for="my-checkbox">
-                        <input type="checkbox" id="my-checkbox"><span class="checkbox__text">Согласен на обработку
+                        <input data-required="true" type="checkbox" id="my-checkbox"><span
+                            class="checkbox__text">Согласен на обработку
                             персональных данных</span>
                     </label>
                     <div class="textarea">
-                        <textarea name="textarea__inp" id="" cols="30" rows="10" class="textarea__inp"
+                        <textarea data-required="true"  name="textarea__inp" id="contact-message" cols="30" rows="10" class="textarea__inp"
                             placeholder="Ваш вопрос"></textarea>
                     </div>
                     <button type="submit" class="popup__button">Отправить</button>
